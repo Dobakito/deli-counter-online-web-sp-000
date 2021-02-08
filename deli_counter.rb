@@ -15,9 +15,9 @@ def take_a_number(katz_deli, name)
   katz_deli << name
   katz_deli.each_with_index do |person, i|
      if katz_deli.length == 0 
-       puts "Welcome, #{person}. You are number #{i + 1} in line"
+       puts "Welcome, #{person}. You are number #{i + 1} in line."
      else
-       puts "Welcome, #{person}. You are number #{i + 1} in line"
+       puts "Welcome, #{person}. You are number #{i[-1] + 1} in line."
     end
   end
 end
