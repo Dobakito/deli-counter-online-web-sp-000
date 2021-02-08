@@ -12,9 +12,6 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  new_array = [ ]
-  katz_deli.each_with_index do |person, i|
-    new_array << "#{i + 1}. #{person}"
-    puts "The line is currently" 
+  katz_deli << name
   end
 end
