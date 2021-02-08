@@ -1,15 +1,12 @@
 katz_deli = [ ]
 def line(katz_deli)
-  sub_array = [ ]
-  katz_deli.each_with_index do |person, i|
-    sub_array << "#{i + 1}. #{person}"
-  end
-  current_line = "the line is currently:"
+ current_line = "the line is currently:"
   if sub_array.length == 0 
     puts "The line is currently empty."
   elsif sub_array.length != 0 
   puts current_line
-  
+  katz_deli.each_with_index do |person, i|
+    sub_array << "#{i + 1}. #{person}"
   
   end 
 end
