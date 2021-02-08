@@ -1,6 +1,6 @@
 katz_deli = [ ]
 def line(katz_deli)
- current_line = "the line is currently:"
+ current_line = "The line is currently:"
  katz_deli.each_with_index do |person, i|
     current_line << " #{i + 1}. #{person}"
   end
