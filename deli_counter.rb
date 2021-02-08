@@ -5,13 +5,13 @@ def line(katz_deli)
     sub_array << "#{i + 1}. #{person}"
   if katz_deli.length == 0 
     puts "The line is currently empty."
-  elsif katz_deli.length != 0 
+  else 
   puts current_line
-  
+  end
   katz_deli.each_with_index do |person, i|
-    sub_array << "#{i + 1}. #{person}"
-  
+    current_line << "#{i + 1}. #{person}"
   end 
+  current_line
 end
 
 def take_a_number(katz_deli, name)
