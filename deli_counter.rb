@@ -4,10 +4,13 @@ def line(katz_deli)
   katz_deli.each_with_index do |person, i|
     sub_array << "#{i + 1}. #{person}"
   end
+  current_line = "the line is currently:"
   if sub_array.length == 0 
     puts "The line is currently empty."
   elsif sub_array.length != 0 
-  puts "The line is currently: #{sub_array}"
+  puts current_line
+  
+  
   end 
 end
 
