@@ -12,5 +12,13 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli << name
+  katz_deli.each_with_index do |person, i|
+     if katz_deli.length == 0 
+      katz_deli << name
+       puts "Welcome, #{person}. You are number #{i + 1} in line"
+     else
+       katz_deli << name
+       puts "Welcome, #{person[-1]}. You are number #{i[-1] + 1} in line"
+    end
+  end
 end
