@@ -5,6 +5,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   elsif sub_array.length != 0 
   puts current_line
+  
   katz_deli.each_with_index do |person, i|
     sub_array << "#{i + 1}. #{person}"
   
