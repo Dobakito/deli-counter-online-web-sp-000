@@ -18,7 +18,7 @@ def take_a_number(katz_deli, name)
        puts "Welcome, #{person}. You are number #{i + 1} in line"
      else
        katz_deli << name
-       puts "Welcome, #{person[-1]}. You are number #{i[-1] + 1} in line"
+       puts "Welcome, #{person[-1]}. You are number #{i[-1]} in line"
     end
   end
 end
